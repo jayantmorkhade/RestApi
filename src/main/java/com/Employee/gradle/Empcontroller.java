@@ -13,6 +13,14 @@ public class Empcontroller {
     EmployeeRepository emprepo;
     Optional<Employee> opemployee;
 
+// This is my new method i have added
+    public void getMe()
+    {
+
+    }
+
+
+
     @PostMapping("/createEmp")
     public Employee saveEmp(@RequestBody Employee employee){
         System.out.println(employee);
