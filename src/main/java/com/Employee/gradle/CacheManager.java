@@ -15,7 +15,7 @@ public class CacheManager {
 @Autowired
 EmployeeRepository emprepo;
 
-@Scheduled(cron = "* * * * * *")
+@Scheduled(cron = "0 *  * * * *")
     public void loadcache(){
     System.out.println("sarting to Load a cache");
     List<Employee> Emplist=emprepo.findAll();
